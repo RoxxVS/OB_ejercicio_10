@@ -1,0 +1,39 @@
+.contenedor {
+    margin: 5%;
+    padding: 2%;
+    border: 1px solid black;
+    background-color: #F7FFE0;
+    display: flex;
+    gap: 5px;
+}
+.navegador {
+    padding: 2%;
+    border: 1px solid black;
+    flex-grow: 1;
+    background-color: #FFEEE2;
+}
+.navegador nav {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.elemento {
+    padding: 4%;
+    border: 1px solid black;
+    background-color: #D2BBA0;
+}
+.principal {
+    padding: 2%;
+    border: 1px solid black;
+    background-color: #FFEEE2;
+    flex-grow: 3;
+}
+@media (max-width: 640px) {
+    .contenedor {
+        flex-direction: column-reverse;
+    }
+    .navegador nav {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+}
